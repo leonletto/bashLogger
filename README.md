@@ -3,7 +3,11 @@
 ## logging module for bash scripts
 
 This script is used to log messages to the console and to a log file and is designed to be similar the API of the python
-logging module.
+logging module.  It includes log rotation by size and by number of log files.
+
+There are a couple of additional functions to show how you could create custom logging functions for yourself.
+
+There is a test script that you can run to see how the logging works.
 
 ## Log rotation
 
@@ -82,6 +86,14 @@ log_info "This is a info log"
 log_debug "This is a debug statement"
 ```
 
+You can also run a command and log the output to the screen and/or to a file if you have set the log file name:  
+The output will be prepended and appended with a begin and end message.  
+This will run ls -l and log the output to the screen and/or to a file if you have set the log file name:
+
+```bash
+log_execute DEBUG ls -l
+```
+
 You can also create custom functions  (which will log to the screen and/or to a file if you have set the log file
 name):  
 I have included a sample of two functions which you can use as examples of how to create your own custom functions.  
@@ -106,13 +118,6 @@ The output will bre prepended and appended with a begin and end message.
 log_info_file /tmp/date.out
 ```
 
-You can also run a command and log the output to the screen and/or to a file if you have set the log file name:  
-The output will bre prepended and appended with a begin and end message.  
-This will run ls -l and log the output to the screen and/or to a file if you have set the log file name:
-
-```bash
-log_execute DEBUG ls -l
-```
 
 ## Example:
 
