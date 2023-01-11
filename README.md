@@ -148,3 +148,12 @@ log_info_file /tmp/date.out
 log_level DEBUG
 log_debug "This is another debug statement"
 ```
+
+## License
+See LICENSE file
+
+## Author
+Written by:  Leon Letto
+
+## Contributions
+Contributions and suggestions are welcome.  Please submit a pull request.
