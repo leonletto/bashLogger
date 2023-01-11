@@ -14,6 +14,7 @@ if [[ "${TRACE-0}" == "1" ]]; then set -o xtrace; fi
 #
 # revision 1 (Jan 8, 2023)
 #
+# logger for bash scripts:
 #
 # This script is used to log messages to the console and to a log file and is designed to be similar the API of the python
 # logging module.
