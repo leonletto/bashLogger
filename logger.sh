@@ -172,7 +172,7 @@ DEBUG=4
 #_log_levels=(CRITICAL ERROR WARNING INFO DEBUG)
 _log_to_screen=true _log_to_file=false _log_file_name="" _log_color_output=true _log_level=3 _log_rotation_count=5 _log_file_rotate_size=100000
 
-dateTime="$(date +%Y/%m/%d) $(date +%T%z)" # Date format: YYYY/MM/DD HH:MM:SS+0000
+dateTime="$(date +%Y/%m/%d\ %T%z)" # Date format: YYYY/MM/DD HH:MM:SS+0000
 
 #dateForFileName=$(date +%Y%m%d)
 #timeForFileName=$(date +%H%M%S)
