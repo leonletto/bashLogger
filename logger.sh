@@ -158,7 +158,7 @@ eq() {
 
 fileSize() {
     # Returns the file size in bytes even if it is on a mapped drive
-    optChar='f'
+    optChar='c'
     fmtString='%z'
     stat -$optChar "$fmtString" "$@"
 }
